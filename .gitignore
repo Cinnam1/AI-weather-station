@@ -131,4 +131,9 @@ dmypy.json
 #Generated files
 face.png
 noLip.avi
+reScaledOut.mp4
+
+#pyCharm
+.idea/
+.videoConvert.py.swp
 
