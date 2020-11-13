@@ -1,5 +1,6 @@
 import requests
 import cv2
+from videoConvert import downsample
 
 #Generate face and put to file face.png
 response = requests.get("https://thispersondoesnotexist.com/image")
@@ -26,3 +27,5 @@ for x in range(seconds*30):
 #Unidentify
 cv2.destroyAllWindows()
 video.release()
+
+downsample("noLip.avi","out.mp4","800")
