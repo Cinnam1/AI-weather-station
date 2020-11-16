@@ -84,27 +84,32 @@ def vid_gen():
     height, width, layers = frame.shape
     video = cv2.VideoWriter(video_name, 0, 30, (width, height))
 
-#Vid name, image name, seconds
-video_name = "noLip.avi"
-image = "face.png"
-seconds = 5;
-    #Put in frames
+    #Vid name, image name, seconds
+    video_name = "noLip.avi"
+    image = "face.png"
+    seconds = 5;
+        #Put in frames
     for x in range(seconds*30):
         video.write(cv2.imread(image))
 
-frame = cv2.imread("face.png")
-height, width, layers = frame.shape
-video = cv2.VideoWriter(video_name, 0, 30, (width, height))
-    #Close the stuffs
+    frame = cv2.imread("face.png")
+    height, width, layers = frame.shape
+    video = cv2.VideoWriter(video_name, 0, 30, (width, height))
+        #Close the stuffs
     cv2.destroyAllWindows()
     video.release()
 
-for x in range(seconds*30):
-    video.write(cv2.imread(image))
+    for x in range(seconds*30):
+        video.write(cv2.imread(image))
 
-#Unidentify
-cv2.destroyAllWindows()
-video.release()
+    #Unidentify
+    cv2.destroyAllWindows()
+    video.release()
 
 
+#Run the functions
+todaysTemp = [12,20,-3]
+todays_forecast()
+voice_gen()
+vid_gen()
 downsample("noLip.avi","out.mp4","800")
