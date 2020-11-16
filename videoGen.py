@@ -28,4 +28,4 @@ for x in range(seconds*30):
 cv2.destroyAllWindows()
 video.release()
 
-downsample("noLip.avi","out.mp4","800")
+downsample("noLip.avi","reScaledOut.mp4","32000")
