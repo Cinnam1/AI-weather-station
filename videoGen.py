@@ -123,6 +123,10 @@ morning = temperatures["daily"][0]["temp"]["morn"] - 273.15
 day = temperatures["daily"][0]["temp"]["day"]-273.15
 eve = temperatures["daily"][0]["temp"]["eve"]-273.15
 thisTodaysTemp = [morning, day, eve]
+morning = temperatures["daily"][1]["temp"]["morn"] - 273.15
+day = temperatures["daily"][1]["temp"]["day"]-273.15
+eve = temperatures["daily"][1]["temp"]["eve"]-273.15
+tommorowsTemp = [morning, day, eve]
 voice_gen(todays_forecast(thisTodaysTemp))
 vid_gen()
 print("Downsampling video file")
