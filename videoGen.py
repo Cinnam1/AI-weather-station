@@ -86,7 +86,7 @@ def vid_gen():
     #Vid name, image name, seconds
     video_name = "noLip.avi"
     image = "face.png"
-    seconds = 5
+    seconds = int(AudioSegment.from_file("ForeCast.mp3").duration_seconds)
     frame = cv2.imread("face.png")
     height, width, layers = frame.shape
     video = cv2.VideoWriter(video_name, 0, 30, (width, height))
@@ -139,5 +139,5 @@ vid_gen()
 
 print("Downsampling video file")
 
-downsample("noLip.avi","reScaledOut.mp4","480000")
+downsample("noLip.avi","reScaledOut.mp4","320000")
 
