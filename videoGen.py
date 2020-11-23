@@ -139,5 +139,5 @@ vid_gen()
 
 print("Downsampling video file")
 
-downsample("noLip.avi","reScaledOut.mp4","32000")
+downsample("noLip.avi","reScaledOut.mp4","480000")
 
