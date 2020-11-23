@@ -1,4 +1,4 @@
-
+from videoConvert import downsample
 import requests
 import cv2
 import math
@@ -107,13 +107,9 @@ def vid_gen():
     video.release()
 
 
-<<<<<<< HEAD
-downsample("noLip.avi","reScaledOut.mp4","32000")
-=======
 #Run the functions
 todaysTemp = [12,20,-3]
 todays_forecast()
 voice_gen()
 vid_gen()
-downsample("noLip.avi","out.mp4","800")
->>>>>>> 0f73b0ebf3de748f1162458c73b14ba84ee5dba7
+downsample("noLip.avi","out.mp4","32000")
