@@ -28,3 +28,4 @@ def downsample(infile,outfile,bitrate):
     subprocess.call(reScale, shell=True)
     subprocess.call(cleanupOldout, shell=True)
     subprocess.call(cleanupOldnoLip, shell=True)
+

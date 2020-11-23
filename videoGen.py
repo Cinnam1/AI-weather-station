@@ -136,5 +136,8 @@ voice_gen(todays_forecast(tommorowsTemp), "tomorrow")
 joinAudio(["today.mp3", "tomorrow.mp3"] , "ForeCast.mp3")
 
 vid_gen()
+
 print("Downsampling video file")
+
 downsample("noLip.avi","reScaledOut.mp4","32000")
+
